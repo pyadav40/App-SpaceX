@@ -49,16 +49,16 @@ const Mainpage = () => {
 
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1}}>
       <Grid container justifyContent="center" >
         <Grid container justifyContent="center">
           <Typography component="div" variant='h4'>SpaceX Lanunches Programs</Typography>
         </Grid>
       </Grid>
       <Grid container m={2} style={{ gap: 30 }} >
-        <Grid item lg={3} md={3} justifyContent="center" sx={{borderRadius:3 ,backgroundColor: "lightblue" }}>
-          <Typography justifyContent="center" component="div" variant='h6'>Filter</Typography>
-          <Typography variant='body1'>Launch Year</Typography>
+        <Grid item lg={3} md={3} justifyContent="center" sx={{borderRadius:3,height:'470' ,backgroundColor: "lightblue" }}>
+          <Typography ml={2} fontFamily='Prompt, sans-serif' justifyContent="center" component="div" variant='h6'>Filter</Typography>
+          <Typography ml={10} variant='body1'>Launch Year</Typography>
           <Divider />
           <Grid container m={1}>
             {
@@ -72,12 +72,12 @@ const Mainpage = () => {
             }
           </Grid>
           <Grid item  >
-            <Typography justifyContent="center" variant='body1'>Successful Launch</Typography>
+            <Typography ml={10} variant='body1'>Successful Launch</Typography>
 
             <Divider />
           </Grid>
-          <Grid container m={1}>
-            <Grid item md={3} lg={3}>
+          <Grid container m={1} >
+            <Grid item ml={7} md={3} lg={3}>
               <Yearbutton handleChange={handleLaunch} year={"True"} />
             </Grid>
             <Grid item md={3} lg={3}>
@@ -85,12 +85,12 @@ const Mainpage = () => {
             </Grid>
           </Grid>
           <Grid item>
-            <Typography variant='body1'>Successful Landing</Typography>
+            <Typography ml={10} variant='body1'>Successful Landing</Typography>
 
             <Divider />
           </Grid>
           <Grid container m={1}>
-            <Grid item md={3} lg={3}>
+            <Grid item ml={7}  md={3} lg={3}>
               <Yearbutton handleChange={handleland} year={"True"} />
             </Grid>
             <Grid item md={3} lg={3}>

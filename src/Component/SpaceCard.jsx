@@ -2,7 +2,7 @@ import { Card, CardContent, CardMedia,Typography } from '@mui/material'
 import React from 'react'
 
 const SpaceCard = ({card_image,mid,launch_year,succ_launch, mi_name}) => {
-// console.log(succ_launch.toString().toUpperCase())
+ 
   return (
  
     <Card sx={{maxWidth:345,backgroundColor:"lightgray"}}>
@@ -12,8 +12,8 @@ const SpaceCard = ({card_image,mid,launch_year,succ_launch, mi_name}) => {
         <Typography variant='body1'>{mi_name}</Typography>
         <Typography variant='body1'>Mission Ids: {mid}</Typography>
         <Typography variant='body1'>Launch Year: {launch_year}</Typography>
-        <Typography variant='body1'>Sucessful Launch: {succ_launch.toString().toUpperCase()} </Typography>
-        <Typography variant='body1'>Sucessful Landing::</Typography>
+        <Typography variant='body1'>Sucessful Launch: {succ_launch.toString().charAt(0).toUpperCase()+succ_launch.toString().slice(1)} </Typography>
+        <Typography variant='body1'>Sucessful Landing:</Typography>
       </CardContent>
     </Card>
    
